@@ -35,7 +35,7 @@ body {
 
 @media screen and (max-width: 600px) {
   body {
-    background-image: url(/images.jpg);
+    background-image: url(images.jpg);
   }
 
   .a {
@@ -65,7 +65,7 @@ body {
 
 @media screen and (min-width: 600px) {
   body {
-    background-image: url(/images.png);
+    background-image: url(images.png);
   }
   .a {
     grid-column: auto / span 3;
@@ -109,7 +109,7 @@ body {
 @media screen and (min-width: 992px) {
   body {
     margin-left: 20px;
-    background-image: url("/download.jpg");
+    background-image: url("download.jpg");
     background-repeat: repeat;
   }
 
