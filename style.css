@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 12px;
+
+  margin-bottom: 0;
+}
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax);
+
+  color: white;
+}
+
+.box {
+  background-color: #490a3d;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+.box li {
+  list-style: none;
+  text-align: left;
+}
+
+.box p {
+  text-align: left;
+}
+/* extra small deices(phones, 600px and down */
+body {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(/images.jpg);
+  }
+
+  .a {
+    grid-column: auto / span 3;
+  }
+
+  .b {
+    grid-column: auto / span 3;
+  }
+  .c {
+    grid-column: auto / span 3;
+  }
+
+  .d {
+    grid-column: auto / span 3;
+  }
+
+  .e {
+    grid-column: auto / span 3;
+  }
+  .f {
+    grid-column: auto / span 3;
+  }
+}
+
+/* small devices(portrait, tablets and large phones, 600px and up */
+
+@media screen and (min-width: 600px) {
+  body {
+    background-image: url(/images.png);
+  }
+  .a {
+    grid-column: auto / span 3;
+  }
+
+  .b {
+    grid-row: auto / span 2;
+  }
+
+  .d {
+    grid-row: auto / span 2;
+  }
+  .f {
+    grid-column: auto / span 3;
+  }
+}
+
+/* medium devices(landscapetablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(/images.png);
+  }
+  .a {
+    grid-column: auto / span 3;
+  }
+
+  .b {
+    grid-row: auto / span 2;
+  }
+
+  .d {
+    grid-row: auto / span 2;
+  }
+  .f {
+    grid-column: auto / span 3;
+  }
+}
+
+/* large devices(laptops/desktops,992px and up */
+
+@media screen and (min-width: 992px) {
+  body {
+    margin-left: 20px;
+    background-image: url("/download.jpg");
+    background-repeat: repeat;
+  }
+
+  .box {
+    background-color: #bd1550;
+  }
+
+  .wrapper h5 {
+    background-color: #490a3d;
+
+    margin: 0;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .a {
+    grid-column: auto / span 3;
+  }
+  .a:hover {
+    border-radius: 10px;
+    background-color: rgb(0, 255, 21);
+    cursor: pointer;
+    width: min-content;
+  }
+
+  .b {
+    grid-row: auto / span 2;
+  }
+  .b:hover {
+    border-radius: 60px;
+  }
+
+  .d {
+    grid-row: auto / span 2;
+  }
+
+  .d:hover {
+    border-radius: 50px;
+  }
+
+  .f {
+    grid-column: auto / span 3;
+  }
+  .f {
+    font-size: larger;
+  }
+}
+/* extra large devices(large laptops and desktops */
+
+@media screen and (min-width: 1200px) {
+  .a {
+    grid-column: auto / span 3;
+  }
+  .a:hover {
+    border-top-width: 60px;
+  }
+
+  .b {
+    grid-row: auto / span 2;
+  }
+
+  .d {
+    grid-row: auto / span 2;
+  }
+  .f {
+    grid-column: auto / span 3;
+  }
+}
